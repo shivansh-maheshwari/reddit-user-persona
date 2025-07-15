@@ -1,3 +1,5 @@
+# Reddit User Persona
+
 A Python script that scrapes a Reddit user's posts and comments and uses **Gemini (LLM)** to generate a detailed **User Persona**, including citations of which post or comment led to each trait.
 
 ---
