@@ -56,57 +56,30 @@ The same applies for:
 https://www.reddit.com/user/Hungry-Move-6603/
 → output: Hungry-Move-6603_persona.txt
 
-🛠 Tech Stack
-  Tool	                      Purpose
-Python 3.10	           Core programming language
-PRAW	                 Reddit API wrapper
-google-generativeai	   For Gemini LLM access
-python-dotenv        	 Loads API keys from .env
-
-⚙️ Setup Instructions
-1️⃣ Clone the Repository
-
-git clone https://github.com/shivansh-maheshwari/reddit-user-persona.git
-cd reddit-user-persona
-
-2️⃣ Create a Virtual Environment (Optional but Recommended)
-
+Tech Stack
+Python 3
+PRAW (Reddit API Wrapper)
+Google Generative AI (Gemini Pro)
+dotenv (.env file for API keys)
+Setup Instructions
+1. Clone this repository
+git clone https://github.com/tusharharyana/reddit-persona-generator.git
+cd reddit-persona-generator
+2. (Optional) Create a virtual environment
 python -m venv venv
-# Windows
-
 venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-
-3️⃣ Install Dependencies
-
+3. Install the dependencies
 pip install -r requirements.txt
-
-4️⃣ Configure API Keys
-
-Create a .env file in the root folder:
-
+4. Create a .env file
 REDDIT_CLIENT_ID=your_reddit_client_id
 REDDIT_CLIENT_SECRET=your_reddit_client_secret
-REDDIT_USER_AGENT=reddit-persona-script (by /u/your_username)
-GEMINI_API_KEY=your_google_gemini_api_key
+REDDIT_USER_AGENT=your_user_agent_string
+GEMINI_API_KEY=your_gemini_api_key
+How to Use
+Run the script and enter a Reddit profile URL:
 
-5️⃣ Run the Script
+python generate_persona.py
+Example input : https://www.reddit.com/user/kojied/
 
-python main.py
-Enter the Reddit profile URL when prompted.
-
-📁 Output
-
-Each run creates a file like:
-
-kojied_persona.txt
-Hungry-Move-6603_persona.txt
-
-Each file contains:
-
-Persona traits (interests, tone, style, values)
-
-Post/comment IDs as citations
-
-Clean and structured text for analysis
+LLM Prompt (Used with Gemini Pro)
+The LLM prompt was designed to return structured personas and include references to specific posts/comments used for inferen
