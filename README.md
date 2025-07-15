@@ -8,7 +8,7 @@ A Python script that scrapes a Reddit user's posts and comments and uses **Gemin
 
 - Input: Reddit user profile URL
 - Scrapes latest posts and comments from the user
-- Uses Gemini Pro (Google's LLM) to analyze behavior
+- Uses Gemini (Google's LLM) to analyze behavior
 - Outputs a structured User Persona in `.txt` format
 - Cites which post or comment supports each trait
 - Follows PEP-8 coding guidelines
